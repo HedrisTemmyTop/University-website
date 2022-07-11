@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(IMAGES/pexels-photo-207684.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    border-radius: 5px;
+}
+.head_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2% 6%;
+}
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color:white;
+}
+.nav_links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav_links ul li a::after{
+    content: '';
+    width:0%;
+    opacity: 0.8;
+    height: 2px;
+    background:#f44336 ;
+    display: block;
+    margin: auto;
+}
+.nav_links ul li a:hover::after{
+    width: 100%;
+    transition: 0.5s all ease;
+}
+.section_content{
+    width:100%;
+    color:white;
+    top:50%;
+    position:absolute;
+    left:50%;
+    font-family: 'Tapestry', cursive;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.section_content h2{
+    font-size: 52px;
+}
+.section_content  a{
+border:1px solid white;
+position: relative;
+top:50px;
+padding:15px 15px 15px 15px;
+text-decoration: none;
+color:white;
+border-radius: 10px;
+}
+.section_content a:hover{
+    background-color:red;
+    border:0;
+    transition: 1s;
+}
+.btn{
+display:none;
+
+}
+.course{
+    width:100%;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+    font-family:'Tapestry', cursive;
+}
+.course_heading{
+    font-family: 'Square Peg', cursive;
+    font-size: 16px;
+    text-align: center;
+}
+.row{
+    display: flex;
+    justify-content:space-between;
+    margin: 5%;
+    
+}
+.course_col{
+    width:20%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom:5% ;
+    padding:  20px 20px 20px 20px;
+}
+.course_col h3{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.course_col:hover{
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+    transition: 0.s;
+}
+.campus{
+    width:80%;
+    margin:auto;
+    text-align: cent
+}
+.campus h1{
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+    font-family:'Tapestry', cursive;
+}
+.campus_text{ 
+font-family: 'Square Peg', cursive;
+    font-size: 16px;
+    text-align: center;
+}
+.campus_col{
+    border-radius: 10px;
+    flex-basis: 32%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.campus_col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.layer{
+    background:transparent;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    border-radius: 10px;
+    height:99.4%;
+    text-align: center;
+    cursor:pointer;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+    transition: 1s;
+}
+.layer h3{
+    width: 100%;
+    font-size: 26px;
+    color:white;
+    left:50%;
+    font-weight:bold;
+    font-family:Bahnschrift SemiBold;
+    position: absolute;
+    bottom:0;
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(-50%);
+}
+.layer:hover h3{
+    opacity: 1;
+    bottom:49%;
+}
+
+/* facilities design */
+
+
+.facilities{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facfacilities_col{
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    text-align: left;
+    border-radius: 10px;
+}
+.facfacilities_col img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.facfacilities_col p{
+    padding:0;
+}
+.facfacilities_col h3{
+    margin-top: 13px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size:25px;
+    font-family:Arial;
+    
+}
+
+/*  MEDIA QUERIES FOR SMALLER DEVICES LIKE PHONE AND TABLETS !*/
+
+
+@media(max-width : 800px){
+    .section_content h2{
+        font-size: 22px;
+    }
+    .nav_links ul li{
+        display: block;
+    }
+    .nav_links{
+        position:absolute;
+        top:0;
+        right:-200px;
+        background-color: #f44336;
+        height:100vh;
+        width:200px;
+        z-index: 2;
+        transition: 0.5s;
+        text-align: left;
+    }
+
+    .btn{
+        display: block;
+        margin: 10px;
+    }
+    #open{
+        position: absolute;
+        top:0;
+        right:0;
+    }
+    .course h1{
+        font-size: 30px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .course_col{
+        width:53%;
+        margin-left: 75px;
+    }
+    .campus h1{
+        font-size: 27px;
+    }
+    .campus_images{
+        flex-direction: column;
+        margin-left: 35px;
+    }
+    .campus_images img{
+        margin-top: 60px;
+    }
+}

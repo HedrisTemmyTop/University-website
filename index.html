@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Square+Peg&family=Tapestry&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="index.css" />
+        <title>University website</title>
+        <meta name="viewport" width="device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--header section-->
+        <section class="header">
+            <nav class="head_nav">
+               <img width="200px" height="100px" class="logo" src="images/logo.png" />
+               <div class="nav_links">
+                   <button class="btn" onclick="closeMenu()"><i class="close">CLOSE</i></button>
+                   <ul>
+                       <li><a  href="#">HOME</a></li>
+                       <li><a  href="#">ABOUT</a></li>
+                       <li><a  href="#">BLOG</a></li>
+                       <li><a  href="#">COURSE</a></li>
+                       <li><a  href="#">CONTACT</a></li>
+
+                   </ul>
+                   </div>
+                   <img src="images/menu.png" width=" 28px;" class="btn"id="open" onclick="openMenu()">
+               </nav>
+            <div class="section_content">
+                <h2>WORLD'S LARGEST UNIVERSITY</h2>
+                <P>Dear babalola idris temitope you should trust yourself cas this is not hard but requires a lot of hard work and that is
+                    what succesfull people do. MAY ALMIGHTY ALLAH BE WITH YOU !
+                </P>
+              <a href="#">Visit us to know more</a>
+            </div>
+
+        </section>
+        <!--header section ends-->
+
+        <!--course section-->
+        <section class="course">
+            <h1>Courses we offer</h1>
+            <p class="course_heading">We offer the following courses at out University</p>
+            <div class="row">
+                <div class="course_col">
+                    <h3>Beginner</h3>
+                    <p>The following is a table of contents for my modern-day book,
+                         based off of a talk I wrote in 2016 entitled “Pushing Left, Like a Boss”. It serves as a foundational
+                          lesson on what “Application Security” is, and how to get started.
+                           I hope you find the series helpful.
+                    </p>
+                </div>
+                <div class="course_col">
+                    <h3>Intermediate</h3>
+                    <p>The following is a table of contents for my modern-day book,
+                         based off of a talk I wrote in 2016 entitled “Pushing Left, Like a Boss”. It serves as a foundational
+                          lesson on what “Application Security” is, and how to get started.
+                           I hope you find the series helpful.
+                    </p>
+                </div>
+                <div class="course_col">
+                    <h3>Professional</h3>
+                    <p>The following is a table of contents for my modern-day book,
+                         based off of a talk I wrote in 2016 entitled “Pushing Left, Like a Boss”. It serves as a foundational
+                          lesson on what “Application Security” is, and how to get started.
+                           I hope you find the series helpful.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-----corses section ends---->
+
+
+        <!-------campus section starts------>
+       <section class="campus">
+           <h1>Our Global Campus</h1>
+           <p class="campus_text">LOREM IPSUM IPSUM</p>
+           <div class="row">
+               <div class="campus_col">
+                   <img src="images/london.png" />
+                   <div class="layer">
+                    <h3>MANCHESTER</h3>
+                </div>
+               </div>
+               <div class="campus_col">
+                <img src="images/newyork.png" />
+                <div class="layer">
+                    <h3>NEW YORK CITY</h3>
+                </div>
+            </div>
+            <div class="campus_col">
+                <img src="images/washington.png" />
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+        
+        
+           </div>
+       </section>
+       <!---------------facilitries------------------->
+       <section class="facilities">
+           <h1>OUR FACILITIES</h1>
+           <p>LOREM IPSUM DOLOR SIT AMER\, CONSECUTIP FYGUHAJKLK;,</p>
+        <div class="row">
+           <div class="facfacilities_col">
+               <img src="IMAGES/library.png" alt="library" />
+               <h3>World class library</h3>
+               <p>ertyguhThe following is a table of contents for my modern-day book,
+                    based off of a talk I wrote in 2016 entitled “Pushing Left, Like a Boss”. 
+                    It serves as a foundational lesson on what “Application Security” is, and how to get started.
+                     I hope you find the series helpful.
+
+            </p>
+           </div>
+           <div class="facfacilities_col">
+            <img src="IMAGES/cafeteria.png" alt="Cafeteria" />
+            <h3>Cafeteria</h3>
+            <p>ertyguhThe following is a table of contents for my modern-day book,
+                 based off of a talk I wrote in 2016 entitled “Pushing Left, Like a Boss”. 
+                 It serves as a foundational lesson on what “Application Security” is, and how to get started.
+                  I hope you find the series helpful.
+
+         </p>
+        </div>
+        <div class="facfacilities_col">
+            <img src="IMAGES/basketball.png" alt="BASKETALLL COURT " />
+            <h3>Playing ground</h3>
+            <p>ertyguhThe following is a table of contents for my modern-day book,
+                 based off of a talk I wrote in 2016 entitled “Pushing Left, Like a Boss”. 
+                 It serves as a foundational lesson on what “Application Security” is, and how to get started.
+                  I hope you find the series helpful.
+
+         </p>
+         </div>
+        </div>
+       </section>
+        <!----JAVASCRIPT TOGGLE SECTION------>
+<script>
+    let close= document.querySelector(".close");
+    let open = document.querySelector(".open");
+    let navLinks = document.querySelector(".nav_links");
+    function openMenu(){
+       navLinks.style.right="0";
+    }
+    function closeMenu(){
+       navLinks.style.right="-200px";
+    }
+
+</script>
+    </body>
+</html>
